@@ -79,7 +79,7 @@ resource "aws_nat_gateway" "eks_nat_gw" {
   subnet_id     = aws_subnet.eks_pub_sub_one.id
 
   tags = {
-    Name = "Natty GW"
+    Name = "Nat GW"
   }
 
   # To ensure proper ordering, it is recommended to add an explicit dependency

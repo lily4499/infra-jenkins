@@ -263,7 +263,8 @@ resource "aws_eks_node_group" "eks_node" {
   # release_version = "latest"
 
   # Configure the node group instances
-  instance_types = ["t3.small", "t3.medium", "t3.large"]
+  #instance_types = ["t3.small", "t3.medium", "t3.large"]
+  instance_types = ["t3.small"]
 
 
   # Use the managed node group capacity provider

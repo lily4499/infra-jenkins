@@ -1,0 +1,10 @@
+eksctl create cluster --name eks_cluster \
+  --region us-east-1 \
+  --version 1.26 \
+  --nodegroup-name eks-nodes \
+  --node-type t3.medium \
+  --nodes 1 \
+  --nodes-min 1 \
+  --nodes-max 2 \
+  --asg-access \
+  --managed

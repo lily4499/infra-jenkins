@@ -22,7 +22,7 @@ module "eks_cluster" {
   cluster_name                = "eks_cluster"  //provide your Cluster Name here
   eks_version                 = "1.26"
   ami_type                    = "AL2_x86_64"
-  instance_types              = ["t3.medium"]
+  instance_types              = ["t3.small"]
   subnet_ids = [
     "subnet-062bafb72ff1b9c71",    
     "subnet-00f1308ab05d4d97a"

@@ -69,7 +69,7 @@ resource "aws_subnet" "eks_priv_sub_two" {
 
 # Create an EIP for the NAT gateway
 resource "aws_eip" "nat_eip" {
-  vpc = true
+  domain = "vpc"
 }
 
 
